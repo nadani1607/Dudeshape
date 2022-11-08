@@ -1,0 +1,72 @@
+.person {
+    margin-top: 130px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+        color: #222222;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    &__box {
+        position: relative;
+    }
+    &__review {
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #555555;
+        max-width: 608px;
+        margin-top: 46px;
+    }
+    &__icon1 {
+        position: absolute;
+        top: 0;
+        left: -17px;
+    }
+    &__icon2 {
+        position: absolute;
+        bottom: 15px;
+        right: 170px;
+    }
+    &__name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 40px;
+        color: #222222;
+        margin-top: 80px;
+    }
+    &__prof {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #555555;
+        margin-top: 10px;
+    }
+    &__slide {
+        display: flex;
+        margin-top: 22px;
+    }
+    &__arrow1 {
+        padding: 12px;
+        border: 1px solid rgba(111, 181, 135, 0.15);
+        border-radius: 100px;
+    }
+    &__arrow2 {
+        padding: 12px;
+        border: 1px solid #6FB587;
+        border-radius: 100px;
+    }
+}
+.person__link + .person__link {
+    margin-left: 20px;
+}

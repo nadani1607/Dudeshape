@@ -1,0 +1,97 @@
+.products {
+    padding-top: 130px;
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 70px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__info {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #555555;
+        max-width: 714px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+    &__go {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+        text-decoration-line: underline;
+        color: #222222;
+        margin-right: 12px;
+    }
+    &__box {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 48%;
+        border: 1px solid rgba(104, 90, 82, 0.19);
+    }
+    &__name {
+        margin-top: 20px;
+        margin-left: 32px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 60px;
+        color: #222222;
+    }
+    &__desc {
+        margin-top: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #555555;
+        margin-left: 32px;
+        max-width: 516px;
+    }
+    &__action {
+        margin: 48px 32px 32px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 32px;
+    }
+    &__btn {
+        padding: 16px 32px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #402F2C;
+        border: 1px solid rgba(104, 90, 82, 0.46);
+    }
+    &__btn:hover {
+        color: #FFFFFF;
+        background: #402F2C;
+    }
+    &__price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 32px;
+        text-align: right;
+        color: #222222;
+    }
+    &__img {
+        width: 600px;
+    }
+}
+.products__btn + .products__btn {
+    margin-left: 24px;
+}

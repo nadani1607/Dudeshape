@@ -1,0 +1,35 @@
+.subscribe {
+    background: #FAFAFA;
+    margin-top: 130px;
+    &__wrapper {
+        display: flex;
+        padding-top: 108px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        color: #222222;
+        padding-bottom: 64px;
+    }
+    &__box {
+        width: 386px;
+        padding: 8px;
+        background-color: #FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 59px;
+    }
+    &__btn {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        background: #402F2C;
+    }
+}

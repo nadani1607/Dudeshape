@@ -1,9 +1,10 @@
 include /src/common/components/layout
 
 +layout('Home page')
-  section
-    .container
-      div Home page
-      div
-        a(href='/test.html') Go to test page
-      div(style='height: 200vh')
+  include sections/title/title
+  include sections/sponsors/sponsors
+  include sections/products/products
+  include sections/indicators/indicators
+  include sections/cosmetic/cosmetic
+  include sections/person/person
+  include sections/subscribe/subscribe

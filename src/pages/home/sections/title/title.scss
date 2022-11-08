@@ -1,0 +1,83 @@
+.title {
+    padding-top: 73px;
+    background: #F9F6F5;
+    &__wrapper {
+        display: flex;
+        position: relative;
+    }
+    &__info {
+        max-width: 55%;
+        z-index: 1;
+    }
+    &__paragraph {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 70px;
+        color: #000000;
+    }
+    &__desc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #555555;
+        margin-top: 30px;
+        max-width: 516px;
+    }
+    &__search {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 326px;
+        background-color: #FFFFFF;
+    }
+    &__icon {
+        padding: 10px;
+        background-color: #402F2C;
+    }
+    &__btn-srch {
+        border: none;
+        margin-right: 8px;
+        background: transparent;
+    }
+    &__btn {
+        margin-top: 60px;
+        margin-bottom: 150px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding: 16px 32px;
+        background-color: #402F2C;
+        border: none;
+    }
+    &__box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    &__products {
+      
+
+    }
+    &__arrows {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+}
+input[type=text] {
+    padding: 15px;
+    border: none;
+    width: 60%;
+}
