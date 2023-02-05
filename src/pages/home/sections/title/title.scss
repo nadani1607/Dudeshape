@@ -1,10 +1,10 @@
 .title {
-  padding-top: 73px;
   background: $main-bcg;
 
   &__wrapper {
     display: flex;
     position: relative;
+    width: 100%;
   }
 
   &__info {
@@ -104,23 +104,40 @@
     }
   }
 
-  &__box {
+  &__products {
     position: absolute;
     right: 0;
     bottom: 0;
+    max-width: 800px;
   }
 
-  &__arrows {
+  .tns-controls {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: 2;
 
-    @include media-breakpoint-down(sm) {
-      width: 100px;
-    }
+    button {
+      padding: 10px;
+      background-color: $main-bcg;
+      border: none;
 
-    @include media-breakpoint-down(xs) {
-      width: 60px;
+      &:after {
+        font-size: 70px;
+        color: $brown;
+      }
+
+      &[data-controls="prev"] {
+        &::after {
+          content: '\2039';
+        }
+      }
+ 
+      &[data-controls="next"] {
+        &::after {
+          content: '\203A';
+        }
+      }
     }
   }
 

@@ -47,3 +47,18 @@ $('a[href*="#"]').on('click', function (e) {
       scrollTop: $($(this).attr('href')).offset().top,
     }, 500, 'linear');
 });
+
+/**
+ * Slider
+ * @see {https://github.com/ganlanyuan/tiny-slider}
+ */
+$(document).ready(function() {
+  tns({
+    container: '.title__slider',
+    slideBy: 'page',
+    autoplay: true,
+    autoplayButtonOutput: false,
+    controlsPosition: 'bottom',
+    controlsText: ['', '']
+  });
+});
