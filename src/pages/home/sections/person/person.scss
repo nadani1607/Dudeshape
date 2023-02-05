@@ -1,72 +1,135 @@
 .person {
-    margin-top: 130px;
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
+  margin-top: 130px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-breakpoint-down(lg) {
+      align-items: center;
     }
-    &__title {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 40px;
-        color: #222222;
-        margin-top: 30px;
-        margin-bottom: 15px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
     }
-    &__box {
-        position: relative;
+  }
+
+  &__photo {
+    @include media-breakpoint-down(lg) {
+      max-width: 48%;
     }
-    &__review {
-        position: relative;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 32px;
-        color: #555555;
-        max-width: 608px;
-        margin-top: 46px;
+  }
+
+  &__info {
+    margin-left: 30px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 48%;
     }
-    &__icon1 {
-        position: absolute;
-        top: 0;
-        left: -17px;
+
+    @include media-breakpoint-down(sm) {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      align-items: center;
     }
-    &__icon2 {
-        position: absolute;
-        bottom: 15px;
-        right: 170px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #222222;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 25px;
     }
-    &__name {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 40px;
-        color: #222222;
-        margin-top: 80px;
+  }
+
+  &__box {
+    position: relative;
+  }
+
+  &__review {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #555555;
+    max-width: 608px;
+    margin-top: 46px;
+
+    &::before {
+      content: url("../images/person/person2.png");
+      position: relative;
+      top: -8px;
     }
-    &__prof {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        color: #555555;
-        margin-top: 10px;
+
+    &::after {
+      content: url("../images/person/person3.png");
+      position: relative;
+      top: -7px;
     }
-    &__slide {
-        display: flex;
-        margin-top: 22px;
+  }
+
+  &__icon1 {
+    position: absolute;
+    top: 0;
+    left: -17px;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #222222;
+    margin-top: 80px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 50px;
     }
-    &__arrow1 {
-        padding: 12px;
-        border: 1px solid rgba(111, 181, 135, 0.15);
-        border-radius: 100px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 25px;
     }
-    &__arrow2 {
-        padding: 12px;
-        border: 1px solid #6FB587;
-        border-radius: 100px;
+  }
+
+  &__prof {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #555555;
+    margin-top: 10px;
+  }
+
+  &__slide {
+    display: flex;
+    margin-top: 22px;
+  }
+
+  &__arrow {
+    padding: 12px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+
+    &_gray {
+      border-color:  rgba(111, 181, 135, 0.15);
     }
-}
-.person__link + .person__link {
-    margin-left: 20px;
+
+    &_green {
+      border-color: #6FB587;
+    }
+  }
+
+  &__link {
+    & + & {
+      margin-left: 20px;
+    }
+  }
 }

@@ -2,21 +2,36 @@
   "header": {
     "menu": [
       {
-        "label": "About Us",
-        "link": "#preview"
+        "label": "Home",
+        "link": "#home"
       },
       {
-        "label": "Services",
-        "link": "#services"
+        "label": "Products",
+        "link": "#products"
       },
       {
-        "label": "Portfolio",
-        "link": "#portfolio"
+        "label": "About us",
+        "link": "#about-us"
       },
       {
-        "label": "Blog",
-        "link": "#blog"
+        "label": "Contact Us",
+        "link": "#contact-us"
       }
     ]
-  }
+  },
+  "sponsors": [1, 2, 3, 4, 5, 6],
+  "products": [
+    { 
+      "image": "images/products/product1.png",
+      "name": "Cosmetic products",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "price": "$120"
+    },
+    { 
+      "image": "images/products/product2.png",
+      "name": "Cosmetic products",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+      "price": "$130"
+    }
+  ]
 }

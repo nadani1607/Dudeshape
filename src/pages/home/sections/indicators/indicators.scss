@@ -1,30 +1,60 @@
 .indicators {
-    margin-top: 130px;
-    background: #FDF8F5;
-    &__row {
-        display: flex;
-        justify-content: space-between;
+  margin-top: 130px;
+  background: #FDF8F5;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+    margin-top: 58px;
+    margin-bottom: 58px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 70px;
+    color: #222222;
+
+    @include media-breakpoint-down(md) {
+      font-size: 46px;
     }
-    &__item {
-        text-align: center;
-        margin-top: 58px;
-        margin-bottom: 58px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 26px;
     }
-    &__title {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 70px;
-        color: #222222;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 20px;
     }
-    &__desc {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
-        color: #555555;
+  }
+
+  &__desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #555555;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 20px;
     }
-    &__line {
-        border: 2px solid #222222;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 16px;
+      line-height: 25px;
     }
+  }
+
+  &__line {
+    border: 2px solid #222222;
+
+    @include media-breakpoint-down(sm) {
+      border-width: 1px
+    }
+  }
 }

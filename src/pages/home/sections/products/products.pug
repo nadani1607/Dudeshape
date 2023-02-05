@@ -1,27 +1,19 @@
-section.products
-    .container
-        p.products__title Our Porular Product
-        .products__row
-            p.products__info Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-            a.products__link(href="#")
-                p.products__go Discover Our Products
-                img(src="images/products/arrow.svg", alt="arrow")
-        .products__box
-            .products__item
-                img.products__img(src="images/products/product1.png", alt="product1")
-                p.products__name Cosmetic products
-                p.products__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                .products__action
-                    .products__btns
-                        button.products__btn Buy Now
-                        button.products__btn Add To Cart
-                    p.products__price $120
-            .products__item
-                img.products__img(src="images/products/product2.png", alt="product1")
-                p.products__name Cosmetic products
-                p.products__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                .products__action
-                    .products__btns
-                        button.products__btn Buy Now
-                        button.products__btn Add To Cart
-                    p.products__price $120
+section.products#products
+  .container
+    p.products__title Our Porular Product
+    .products__row
+      p.products__info Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+      a.products__link(href="#")
+        p.products__go Discover Our Products
+        img(src="images/products/arrow.svg" alt="arrow")
+    .products__box
+      each item in products
+        .products__item
+          img.products__img(src=item.image alt=item.name)
+          p.products__name= item.name
+          p.products__desc= item.desc
+          .products__action
+            .products__btns
+              button.products__btn Buy Now
+              button.products__btn Add To Cart
+            p.products__price= item.price

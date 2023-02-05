@@ -2,13 +2,26 @@
   padding-top: 59px;
   padding-bottom: 52px;
   background: #FAFAFA;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+    }
   }
 
   &__box {
     max-width: 326px;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 230px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      max-width: unset;
+    }
   }
 
   &__desc {
@@ -18,11 +31,24 @@
     line-height: 32px;
     color: #555555;
     margin-top: 38px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 17px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
+
   &__links {
     display: flex;
     flex-direction: column;
+
+    @include media-breakpoint-down(xs) {}
   }
+
   &__title {
     font-style: normal;
     font-weight: 500;
@@ -30,13 +56,36 @@
     line-height: 24px;
     color: #222222;
     margin-bottom: 39px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 55px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      margin-bottom: 44px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
   }
+
   &__link {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #222222;
+
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+
+    &+& {
+      margin-top: 20px;
+    }
   }
 
   &__social {
@@ -45,12 +94,10 @@
     max-width: 87px;
     justify-content: space-between;
   }
-  
-}
 
-.footer__link + .footer__link {
-  margin-top: 20px;
-}
-a:hover {
-  cursor: pointer;
+  &__logo {
+    @include media-breakpoint-down(sm) {
+      width: 130px;
+    }
+  }
 }

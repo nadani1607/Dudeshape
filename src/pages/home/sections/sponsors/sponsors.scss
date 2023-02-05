@@ -1,12 +1,35 @@
 .sponsors {
-    padding-top: 130px;
-    &__box {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 42px;
-        margin-bottom: 48px;
+  padding-top: 130px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 42px;
+    margin-bottom: 48px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 12px;
     }
-}
-hr {
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: calc(100% / 6);
+
+    @include media-breakpoint-down(md) {
+      width: calc(100% / 3);
+      margin-top: 30px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: calc(100% / 2);
+      margin-top: 40px;
+    }
+  }
+
+  hr {
     border: 1px solid #EEEEEE
+  }
 }
