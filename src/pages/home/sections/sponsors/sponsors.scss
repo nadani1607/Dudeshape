@@ -1,6 +1,4 @@
 .sponsors {
-  padding-top: 130px;
-
   &__box {
     display: flex;
     justify-content: space-between;
@@ -25,7 +23,7 @@
 
     @include media-breakpoint-down(xs) {
       width: calc(100% / 2);
-      margin-top: 40px;
+      margin-top: 20px;
     }
   }
 

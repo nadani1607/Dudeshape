@@ -1,6 +1,5 @@
 .subscribe {
   background: #FAFAFA;
-  margin-top: 130px;
 
   &__wrapper {
     display: flex;
@@ -18,7 +17,7 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 46px;
-    color: #222222;
+    color: $text-color-black;
     padding-bottom: 64px;
 
     @include media-breakpoint-down(lg) {
@@ -43,7 +42,7 @@
   &__box {
     width: 386px;
     padding: 8px;
-    background-color: #FFFFFF;
+    background-color: $white;
     display: flex;
     justify-content: space-between;
     margin-bottom: 59px;
@@ -58,9 +57,9 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: $white;
     padding: 10px 20px;
-    background: #402F2C;
+    background: $brown;
     border: none;
 
     @include media-breakpoint-down(md) {

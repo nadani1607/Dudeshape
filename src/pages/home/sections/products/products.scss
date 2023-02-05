@@ -1,6 +1,4 @@
 .products {
-  padding-top: 130px;
-
   &__title {
     font-style: normal;
     font-weight: 500;
@@ -32,7 +30,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #555555;
+    color: $text-color-gray;
     max-width: 714px;
 
     @include media-breakpoint-down(md) {
@@ -40,11 +38,11 @@
     }
 
     @include media-breakpoint-down(sm) {
+      max-width: 100%;
       font-size: 18px;
     }
 
     @include media-breakpoint-down(xs) {
-      max-width: 100%;
       line-height: 28px;
     }
   }
@@ -64,7 +62,7 @@
     font-size: 24px;
     line-height: 30px;
     text-decoration-line: underline;
-    color: #222222;
+    color: $text-color-black;
     margin-right: 12px;
 
     @include media-breakpoint-down(lg) {
@@ -104,7 +102,7 @@
     font-weight: 500;
     font-size: 40px;
     line-height: 60px;
-    color: #222222;
+    color: $text-color-black;
 
     @include media-breakpoint-down(md) {
       font-size: 30px;
@@ -123,7 +121,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #555555;
+    color: $text-color-gray;
     margin-left: 32px;
     max-width: 516px;
 
@@ -161,12 +159,13 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #402F2C;
+    color: $brown;
     border: 1px solid rgba(104, 90, 82, 0.46);
+    margin-right: 10px;
 
     &:hover {
-      color: #FFFFFF;
-      background: #402F2C;
+      color: $white;
+      background: $brown;
     }
 
     @include media-breakpoint-down(md) {
@@ -193,7 +192,7 @@
     font-size: 30px;
     line-height: 32px;
     text-align: right;
-    color: #222222;
+    color: $text-color-black;
 
     @include media-breakpoint-down(lg) {
       font-size: 22px;

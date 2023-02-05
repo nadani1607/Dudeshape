@@ -15,7 +15,12 @@ html {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -52,6 +57,38 @@ body {
 
 main {
   flex: 1 1 auto;
+}
+
+section {
+  padding-top: 130px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 100px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+  }
+}
+
+section {
+  &.indicators,
+  &.subscribe {
+    padding: 0 !important;
+    margin-top: 130px;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 50px;
+    }
+  }
+}
+
+a {
+  color: inherit;
 }
 
 .container {

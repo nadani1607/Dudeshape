@@ -1,6 +1,4 @@
 .person {
-  margin-top: 130px;
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -40,7 +38,7 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    color: #222222;
+    color: $text-color-black;
     margin-top: 30px;
     margin-bottom: 15px;
 
@@ -59,7 +57,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #555555;
+    color: $text-color-gray;
     max-width: 608px;
     margin-top: 46px;
 
@@ -87,7 +85,7 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    color: #222222;
+    color: $text-color-black;
     margin-top: 80px;
 
     @include media-breakpoint-down(md) {
@@ -104,7 +102,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: #555555;
+    color: $text-color-gray;
     margin-top: 10px;
   }
 

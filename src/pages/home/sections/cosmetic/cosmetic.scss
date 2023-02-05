@@ -1,6 +1,4 @@
 .cosmetic {
-  margin-top: 130px;
-
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -35,7 +33,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
-    line-height: 70px;
+    line-height: 1.25;
 
     @include media-breakpoint-down(lg) {
       font-size: 46px;
@@ -55,8 +53,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 32px;
-    color: #555555;
+    line-height: 1.6;
+    color: $text-color-gray;
     margin-top: 20px;
 
     @include media-breakpoint-down(sm) {
@@ -69,9 +67,9 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: $white;
     padding: 16px 32px;
-    background: #402F2C;
+    background: $brown;
     border: none;
     margin-top: 50px;
 

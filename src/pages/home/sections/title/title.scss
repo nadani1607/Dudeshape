@@ -1,6 +1,6 @@
 .title {
   padding-top: 73px;
-  background: #F9F6F5;
+  background: $main-bcg;
 
   &__wrapper {
     display: flex;
@@ -25,7 +25,6 @@
     font-weight: 500;
     font-size: 56px;
     line-height: 70px;
-    color: #000000;
 
     @include media-breakpoint-down(md) {
       font-size: 46px;
@@ -47,10 +46,10 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    color: #555555;
+    color: $text-color-gray;
     margin-top: 30px;
     max-width: 516px;
-    text-shadow: 1px 0px 0px #f9f6f5;
+    text-shadow: 1px 0px 0px $main-bcg;
 
     @include media-breakpoint-down(md) {
       max-width: unset;
@@ -73,12 +72,12 @@
     display: flex;
     justify-content: space-between;
     max-width: 326px;
-    background-color: #FFFFFF;
+    background-color: $white;
   }
 
   &__icon {
     padding: 10px;
-    background-color: #402F2C;
+    background-color: $brown;
   }
 
   &__btn-srch {
@@ -94,9 +93,9 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: $white;
     padding: 16px 32px;
-    background-color: #402F2C;
+    background-color: $brown;
     border: none;
 
     @include media-breakpoint-down(xs) {
